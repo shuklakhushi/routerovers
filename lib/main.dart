@@ -177,10 +177,6 @@ class DestinationPage extends StatelessWidget {
   }
 }
 
-// Rest of your code remains unchanged
-
-// ... (ItineraryPage, DayPlannerPage, AddActivityDialog classes)
-
 
 class ItineraryPage extends StatelessWidget {
   @override
