@@ -30,7 +30,7 @@ class WeatherWidget extends StatefulWidget {
 }
 
 class _WeatherWidgetState extends State<WeatherWidget> {
-  String _weatherInfo = 'Sunny, 25°C';
+  String _weatherInfo = 'Sunny, 25°C'; //static value
 
   @override
   Widget build(BuildContext context) {
@@ -53,7 +53,7 @@ class _WeatherWidgetState extends State<WeatherWidget> {
             onPressed: () {
               // Implement weather data fetching logic here
               setState(() {
-                _weatherInfo = 'Cloudy, 20°C';
+                _weatherInfo = 'Cloudy, 20°C'; //static value
               });
             },
             child: Text('Refresh Weather'),

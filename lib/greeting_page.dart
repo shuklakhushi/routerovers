@@ -17,24 +17,24 @@ class GreetingPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Image.network(
-              'assets/images/paris.jpg',
+              'assets/images/paris.jpg', //display the image
               width: 200,
               height: 200,
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/calculator');
+                Navigator.pushNamed(context, '/calculator'); //navigate to calculator page
               },
               child: Text('Open Calculator'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/weather');
+                Navigator.pushNamed(context, '/weather'); //navigate to weather page
               },
               child: Text('Check Weather'),
             ),
-            // Add more buttons for other tools if needed
+            
           ],
         ),
       ),

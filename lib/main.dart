@@ -18,9 +18,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => GreetingPage(),
-        '/calculator': (context) => CalculatorPage(),
-        '/weather': (context) => WeatherPage(),
+        '/': (context) => GreetingPage(), //route for greeting page
+        '/calculator': (context) => CalculatorPage(), //route for calculator page
+        '/weather': (context) => WeatherPage(), //route for weather page
 
         // Define routes for other pages here
       },

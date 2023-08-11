@@ -17,7 +17,7 @@ class CalculatorPage extends StatelessWidget {
               style: TextStyle(fontSize: 24),
             ),
             SizedBox(height: 20),
-            CalculatorWidget(),
+            CalculatorWidget(), //display the CalculatorWidget
           ],
         ),
       ),
@@ -31,8 +31,8 @@ class CalculatorWidget extends StatefulWidget {
 }
 
 class _CalculatorWidgetState extends State<CalculatorWidget> {
-  String _expression = '';
-  String _result = '';
+  String _expression = ''; //used to store the user input
+  String _result = ''; //used to store the result
 
   void _onButtonPressed(String value) {
     setState(() {
@@ -75,8 +75,8 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
             _result,
             style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: 20),
-          Row(
+          SizedBox(height: 20), 
+          Row( //display the numeric and operators buttons in a row
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               buildCalcButton('7'),
@@ -111,11 +111,11 @@ class _CalculatorWidgetState extends State<CalculatorWidget> {
             children: [
               buildCalcButton('='),
               buildCalcButton('0'),
-              buildCalcButton('.'),
+              buildCalcButton('C'),
               buildCalcButton('-'),
             ],
           ),
-          // Add other rows of buttons similarly
+         
         ],
       ),
     );
